@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+    int valor = 0;
+    int valor1 = 0; 
+    int valor2 = 0;
+    int valor3 = 0;
+    printf("Por favor, digite três valores:\n");
+    scanf("%d", &valor1);
+    scanf("%d", &valor2);
+    scanf("%d", &valor3);
+    if (valor1 > valor2)
+        if(valor2>valor3)
+            printf("Valor %d é o maior. Valor %d é o intermediário. Valor %d é o menor.", valor1,valor2,valor3);
+    if (valor1> valor3)
+        if (valor3> valor2)
+            printf("Valor %d é o maior. Valor %d é o intermediário. Valor %d é o menor.", valor1,valor3,valor2);
+    if (valor2> valor1)
+        if (valor1> valor3)
+            printf("Valor %d é o maior. Valor %d é o intermediário. Valor %d é o menor.", valor2,valor1,valor3);
+    if (valor2> valor3)
+        if (valor3> valor1)
+            printf("Valor %d é o maior. Valor %d é o intermediário. Valor %d é o menor.", valor2,valor3,valor1);
+    if (valor3> valor2)
+        if (valor2> valor1)
+            printf("Valor %d é o maior. Valor %d é o intermediário. Valor %d é o menor.", valor3,valor2,valor1);
+    if (valor3> valor1)
+        if (valor1> valor2)
+            printf("Valor %d é o maior. Valor %d é o intermediário. Valor %d é o menor.", valor3,valor1,valor2);
+    
+    
+}
