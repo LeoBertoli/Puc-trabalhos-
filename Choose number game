@@ -5,6 +5,7 @@ int main()
     int secretvalor, guess, numberguesses = 0;
     printf ("Please player 1 choose a number between 1 and 100");
     scanf ("%d", &secretvalor);
+    system ("clear");
 do {
     printf (" Please player 2 guess the number ");
     scanf ("%d", &guess);
