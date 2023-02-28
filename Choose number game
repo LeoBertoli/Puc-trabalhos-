@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int secretvalor, guess, numberguesses = 0;
+    printf ("Please player 1 choose a number between 1 and 100");
+    scanf ("%d", &secretvalor);
+do {
+    printf (" Please player 2 guess the number ");
+    scanf ("%d", &guess);
+    numberguesses++;
+    if ( guess > secretvalor ) {
+        printf ("too high\n");
+    }
+    else if ( guess < secretvalor ){
+        printf ("too low\n");
+    }
+    else {
+        printf (" congartulations you guessed right  in %d guesses!\n", numberguesses);
+        
+    }
+}while (guess != secretvalor);
+    return 0;
+}
